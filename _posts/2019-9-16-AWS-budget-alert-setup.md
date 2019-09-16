@@ -37,7 +37,7 @@ Having a budget alert would quickly notify you in real time when you start spend
 15. If every goes well you will be redirected to a page indicatiing that subscription has been successfully created
 ![successful_subscription]({{ site.baseurl }}/images/successful-subscription.jpg)
 16. Go back to your previous tab that you left in step 7, and paste the arn you copied in step 12 into the "SNS Topic ARN" textbox
-![paste_arn]({{ site.baseurl }}/images/pass-arn.jpg)
+![paste_arn]({{ site.baseurl }}/images/paste-arn.jpg)
 17. Click on "Create budget" and you are done!
 
 
