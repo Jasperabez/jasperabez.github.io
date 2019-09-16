@@ -56,8 +56,8 @@ Having a budget alert would quickly notify you in real time when you start spend
 
 
 11. Scroll to line 23 and delete the entire "Condition" chunk effectively from line 23-27, scroll down and select "Save changes"
-
-  ![remove_condition]({{ site.baseurl }}/images/remove-condition.jpg)
+   
+   ![remove_condition]({{ site.baseurl }}/images/remove-condition.jpg)
 
 
 12. You should be greeted by the following page, copy the arn which will begin in this format "arn:aws" followed by a long string of text and save it somewhere to refer back to later
