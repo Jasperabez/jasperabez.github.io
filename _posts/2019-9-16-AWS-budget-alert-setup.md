@@ -51,7 +51,7 @@ Having a budget alert would quickly notify you in real time when you start spend
 
 
 10. Scroll down and select the drop down menu "Access policy - _optional_"
-![dropdown_Access_policy]({{ site.baseurl }}/images/dropdown-access-policy.jpg)
+   ![dropdown_Access_policy]({{ site.baseurl }}/images/dropdown-access-policy.jpg)
 
 
 11. Scroll to line 23 and delete the entire "Condition" chunk effectively from line 23-27, scroll down and select "Save changes"
