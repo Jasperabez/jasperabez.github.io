@@ -19,9 +19,9 @@ Having a budget alert would quickly notify you in real time when you start spend
 ![setup_budget]({{ site.baseurl }}/images/setup-budget.png)
 6. In this page fill in the email contacts to receive the alerts and tick the checkbox for "Notify via Amazon Simple Notification Service (SNS) topic"
 ![configure_alerts]({{ site.baseurl }}/images/configure-alerts.png)
-7. a new textbox would appear, along with a new link "Manage your SNS topics" click on the link which should open in a new tab
+7. A new textbox would appear, along with a new link "Manage your SNS topics" click on the link which should open in a new tab
 ![sns_link]({{ site.baseurl }}/images/sns-link.png)
-8. you'll be brought to the Amazon SNS dashboard, select "Topics" from the side menu and click "Create topic"
+8. You'll be brought to the Amazon SNS dashboard, select "Topics" from the side menu and click "Create topic"
 ![SNS_topics]({{ site.baseurl }}/images/sns-topics.png)
 9. After being redirected to this page, fill in "Name" and "Display Name"
 ![SNS_details]({{ site.baseurl }}/images/sns-details.png)
@@ -31,7 +31,7 @@ Having a budget alert would quickly notify you in real time when you start spend
 ![remove_condition]({{ site.baseurl }}/images/remove-condition.png)
 12. You should be greeted by the following page, copy the arn which will begin in this format "arn:aws" followed by a long string of text and save it somewhere to refer back to later
 ![successful_topic_creation]({{ site.baseurl }}/images/successful-topic-creation.png)
-13. click "Create subscription" to continue the setup
+13. Click "Create subscription" to continue the setup
 14. From the "Protocol" selection menu, select "SMS", and for the Endpoint textbox fill in your number with your country code, when you are done click "Create subscription"
 ![create_subscription]({{ site.baseurl }}/images/create-subscription.png)
 15. If every goes well you will be redirected to a page indicatiing that subscription has been successfully created
@@ -40,5 +40,6 @@ Having a budget alert would quickly notify you in real time when you start spend
 ![paste_arn]({{ site.baseurl }}/images/pass-arn.png)
 17. Click on "Create budget" and you are done!
 
-That's honestly quite alot of steps and cerrtainlu overwhelming if you are completely new to AWS but at least if gives you a peace of mind when you go through day by day :)
+
+That's honestly quite alot of steps and cerrtainly overwhelming if you are completely new to AWS but at least if it gives you a peace of mind when you go through day by day it is definitely worth it :)
 
