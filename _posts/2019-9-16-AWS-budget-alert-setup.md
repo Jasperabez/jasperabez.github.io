@@ -86,5 +86,5 @@ Having a budget alert would quickly notify you in real time when you start spend
 17. Click on "Create budget" and you are done!
 
 
-That's honestly quite alot of steps and cerrtainly overwhelming if you are completely new to AWS but at least if it gives you a peace of mind when you go through day by day it is definitely worth it :)
+That's honestly quite alot of steps and cerrtainly overwhelming if you are completely new to AWS but at least if it gives you a peace of mind when you go through day by day it is definitely worth it :))
 
