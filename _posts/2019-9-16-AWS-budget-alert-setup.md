@@ -57,12 +57,12 @@ Having a budget alert would quickly notify you in real time when you start spend
 
 11. Scroll to line 23 and delete the entire "Condition" chunk effectively from line 23-27, scroll down and select "Save changes"
    
-   ![remove_condition]({{ site.baseurl }}/images/remove-condition.jpg)
+    ![remove_condition]({{ site.baseurl }}/images/remove-condition.jpg)
 
 
 12. You should be greeted by the following page, copy the arn which will begin in this format "arn:aws" followed by a long string of text and save it somewhere to refer back to later
    
-   ![successful_topic_creation]({{ site.baseurl }}/images/successful-topic-creation.jpg)
+    ![successful_topic_creation]({{ site.baseurl }}/images/successful-topic-creation.jpg)
 
 
 13. Click "Create subscription" to continue the setup
@@ -70,17 +70,17 @@ Having a budget alert would quickly notify you in real time when you start spend
 
 14. From the "Protocol" selection menu, select "SMS", and for the Endpoint textbox fill in your number with your country code, when you are done click "Create subscription"
    
-   ![create_subscription]({{ site.baseurl }}/images/create-subscription.jpg)
+    ![create_subscription]({{ site.baseurl }}/images/create-subscription.jpg)
 
 
 15. If every goes well you will be redirected to a page indicatiing that subscription has been successfully created
    
-   ![successful_subscription]({{ site.baseurl }}/images/successful-subscription.jpg)
+    ![successful_subscription]({{ site.baseurl }}/images/successful-subscription.jpg)
 
 
 16. Go back to your previous tab that you left in step 7, and paste the arn you copied in step 12 into the "SNS Topic ARN" textbox
    
-   ![paste_arn]({{ site.baseurl }}/images/paste-arn.jpg)
+    ![paste_arn]({{ site.baseurl }}/images/paste-arn.jpg)
 
 
 17. Click on "Create budget" and you are done!
