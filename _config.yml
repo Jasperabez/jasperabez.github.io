@@ -9,7 +9,7 @@ name: ProgrammingBleu
 description: Aspiring Programmer
 #
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: { site.baseurl }/images/jabez.png
+avatar: https://raw.githubusercontent.com/Jasperabez/jasperabez.github.io/master/images/jabez.png
 
 #
 # Flags below are optional
