@@ -1,21 +1,28 @@
+---
+layout: post
+title: Using AWS Rekognition For Facial Identification
+---
 Facial recognition is kind of neat, and had been quite widely use as a quick and dirty way of identifying an individual.
 
 Traditionally to implement Facial recognition we need to:
 
 1. Identify Faces in an Image
+
 2. Extract features from the face
+
 3. Store the features from step 2 in a database, tagged with a name/index
+
 3. Repeat Step 1 and 2, and compare the new features with all the faces in the database using a classifier then you will get the desired name/index
 
-There're some great libraries that you can use to implement these steps, such as the "face_recognition" library by ageitgey, which does ease the process relatively. However there's still a fair bit of work to setup and deploy, with some accuracy issues. 
+There're some great libraries that you can use to implement these steps, such as the [https://github.com/ageitgey/face_recognition]("face_recognition") library by [https://github.com/ageitgey](Adam Geitgey), which does ease the process relatively. However there's still a fair bit of work to setup and deploy, with some accuracy issues. 
 
-Hence, depending on time limitations and the scpoe of your project you might want to opt for a tool like Aws Rekognition which greatly simplifies and abstracts the steps for doing facial recognition for you.
+Hence, depending on time limitations and the scpoe of your project you might want to opt for a tool like AWS Rekognition which greatly simplifies and abstracts the steps for doing facial recognition for you.
 
-Just a short note however, Aws rekognition have no GUI available on the Aws web console, hence I'll also provide the steps to setting up Aws programmatic access in this guide.
+Just a short note however, AWS rekognition have no GUI available on the AWS web console, hence I'll also provide the steps to setting up AWS programmatic access in this guide.
 
-# Step 1 - Setting up Aws programmatic access
+# Step 1 - Setting up AWS programmatic access
 
-1. Login to Aws management console
+1. Login to AWS management console
 
 2. Click on **Services** > **IAM** (found under the section “Security, Identity & Compliance).
 
@@ -75,6 +82,6 @@ pip install boto3 pillow
 
 2. point the function add2col (line 41) and check_face (Line 42) to your image path(only one face per image), and type in the person's name replacing 'PersonNAME'
 
-3. run the script, face is added to collection, and name is infered from face, if the console prints back the same name you typed in, everything is working
+3. run if the console prints back the same name you typed in, everything is working
 
 
