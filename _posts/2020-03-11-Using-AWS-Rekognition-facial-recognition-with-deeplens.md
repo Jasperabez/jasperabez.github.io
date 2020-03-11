@@ -98,3 +98,81 @@ For this project we didn't have to store the face image taken in persistent stor
     message format is either '{ }' or '{name:..., confidence:..., face:...}'
     
     face represents how confidence the deeplens model think that's a face
+
+# Interesting findings
+
+## 1. Pip install differences in Amazon Linux vs Manjaro(python)
+
+Following this [AWS Development Guide](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html) on 'AWS Lambda Deployment Package in Python' I did a:
+
+```
+pip install --target . Pillow
+```
+
+on my folder that is holding the relevant lambda code, because I had to use the Pillow library to save the numpy array into an Image before sending it off to Rekognition.
+
+However I ran into this Error when I deployed my project on the Deeplens
+
+```
+ImportError: cannot import name _imaging
+```
+
+After some googling there's a someone on stackoverflow that had the same issue as mine: [Lambda-Uploader: Unable to import module 'CreateThumbnail': cannot import name _imaging](https://stackoverflow.com/questions/46093874/lambda-uploader-unable-to-import-module-createthumbnail-cannot-import-name).
+
+Apparently the solution requires me to whip up a EC2 Amazon Linux instance, ssh into it and do the pip install in there instead of doing it in a standard linux distribution due to some environment differences, which is kind of a pain as I only needed to grab that one library. 
+
+Looking down however there's this guy who refer the Original Poster to get his libraries from a Github reposistory called: [Lambda packages](https://github.com/Miserlou/lambda-packages) by [Rich Jones](https://github.com/Miserlou) who had precompiled some commonly used python libraries in an Amazon Linux instance. So I grab the Pillow library from there instead.
+
+It did solve the ImportError but it bought up a new error:
+
+```
+Failed to import handler function "greengrassHelloWorld.function_handler" due to exception: libjpeg.so.62: cannot open shared object file: No such file or directory
+```
+ 
+## 2. Greengrass Lambda seems to run locally or at least compiled to a local script of some form
+
+From my prior experiences with AWS lambda, lambda code is run in the cloud on some random AWS EC2 instance. However while reading some documentation on Greegrass and Deeplens and at least in this Image from AWS:
+
+![frame-work]({{ site.baseurl }}/images/framework-dl.jpg)
+
+along with the fact that same python libraries imported in the AWS lambda function could also be import locally on the Deeplens while SSH into.
+
+```
+import aws_cam
+```
+
+I had a suspicion that the lambda function is ran locally in some form or another.
+
+Back to my previous error:
+
+```
+Failed to import handler function "greengrassHelloWorld.function_handler" due to exception: libjpeg.so.62: cannot open shared object file: No such file or directory
+```
+
+I did some googling but the results were not promising, but with my limited linux experience I hypothesize that it should be a missing dependencies on the linux distribution and along with the idea that the lambda might be run locally, I SSH into the deeplens as the user aws_cam user and ran:
+
+```
+sudo apt install libjpeg-dev
+```
+
+and surprisingly it worked!! So this seems to prove the notion of lambda being run in some form or another as I managed to fixed the error by installing the dependency **locally** on the deeplens.
+
+But I did also note that simply doing:
+
+```
+pip install Pillow
+``` 
+
+locally on the deeplens doesn't seems to work, as I would have a module not found error. I'll have to use the method I mentioned at the ' Pip install differences in Amazon Linux vs Manjaro(python)' section. Just something to think about.
+
+In the end however I did also copied the libjpeg.so.62 file from the
+
+```
+/usr/lib64
+```
+
+folder from my Manjaro setup and put into the root directory of the lambda function for good measure. However, didn't try out whether the lambda will work with this workaround instead of installing libjpeg locally on the deeplens.
+
+
+
+
