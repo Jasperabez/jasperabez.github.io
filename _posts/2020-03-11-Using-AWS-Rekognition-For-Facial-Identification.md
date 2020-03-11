@@ -35,8 +35,13 @@ Just a short note however, Aws rekognition have no GUI available on the Aws web 
 
 ## For Windows Users
 a. Paste in your **Access key ID** and **Secret Access Key** into a file called **credentials** located inside the folder
-```%USERPROFILE%/.aws```
-Full path: ```%USERPROFILE%/.aws/credentials```
+```
+%USERPROFILE%/.aws
+```
+Full path: 
+```
+%USERPROFILE%/.aws/credentials
+```
 following the format
 ```
 [default]
@@ -45,8 +50,13 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 ## For Linux Users
 Paste in your **Access key ID** and **Secret Access Key** into a file called **credentials** located inside the folder
-```~/.aws```
-Full path: ```~/.aws/credentials```
+```
+~/.aws
+```
+Full path: 
+```
+~/.aws/credentials
+```
 following the format
 ```
 [default]
