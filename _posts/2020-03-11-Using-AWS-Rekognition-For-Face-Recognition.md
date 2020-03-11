@@ -100,4 +100,11 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 3. run if the console prints back the same name you typed in, everything is working
 
+# Conclusion
+
+To build your own projects just use the add2col and check_face functions as you see fit, what they do is pretty self-explanatory. 
+
+Do note that rekognition doesn't store actually images in it's collections it just store the extracted features and metadata. 
+
+The data we send to Rekognition is a JPEG file but encoded in a binary stream
 

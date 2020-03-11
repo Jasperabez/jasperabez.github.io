@@ -11,6 +11,9 @@ Although we can definitely train on a specific individual face using object dete
 
 As such we opt to instead do the face detection on the Deeplens ecosystem, then pass the found face to a dedicated face recognition system that can also be run locally on the deeplens as well or to the cloud. In this guide we pass our faces to AWS rekognition which I had well covered on how to setup face recognition on over [here]({{ site.baseurl }}/Using-AWS-Rekognition-For-Face-Recognition/).
 
+For this project we didn't have to store the face image taken in persistent storage as we store the Image in a binary stream before sending to AWS rekognition in bytes.
+
+
 # Step 1 - Setup your Deeplens
 
 1. Register your Deeplens to your AWS account using the [AWS Developer guide](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started-register.html), enable the SSH option when setting up internet connection.
@@ -70,6 +73,7 @@ As such we opt to instead do the face detection on the Deeplens ecosystem, then 
     ```
 
     make sure the zip-file path is correct
+
 
 # Step 3 - deploy your project to AWS Deeplens
 
