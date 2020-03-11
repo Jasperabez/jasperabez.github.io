@@ -12,7 +12,7 @@ I would like to specially thank a few people for guiding me through some adventu
 
 
 <div class="container-md d-flex flex-wrap mx-auto flex-justify-center" style="text-align: center">
-	<div class="border border-gray-dark rounded-2 mb-2" style="max-width: 250px; margin-left: 240px; margin-right: 2px">
+	<div class="border border-gray-dark rounded-2 mb-2" style="max-width: 250px; margin-left: 240px; margin-right: 2px; margin-auto">
 	<div class="m-2">
 		<img src="https://images.youracclaim.com/images/5fcf4e73-2f89-4d87-89c6-6804c35f03b7/blob.png" style="border-radius: 100%; max-width: 200px; max-height: 200px;"> 
 		<p>Teo Shin Jen (Mr)</p>

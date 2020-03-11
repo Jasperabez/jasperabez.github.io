@@ -26,22 +26,38 @@ Just a short note however, AWS rekognition have no GUI available on the AWS web 
 
 2. Click on **Services** > **IAM** (found under the section “Security, Identity & Compliance).
 
+    ![iam]({{ site.baseurl }}/images/console-page-rekog-tut.png)
+
 3. On the sidebar, click on **Users*. 
+
+    ![users]({{ site.baseurl }}/images/users-rekog-tut.png)
 
 4. Click on **Add user**.
 
+    ![add-user-button]({{ site.baseurl }}/images/add-user-button-rekog-tut.png)
+
 5. Fill in your desired Username, and **tick Programmatic access** under **Select AWS access type**, proceed by clicking **Next: Permissions**
+
+    ![add-user]({{ site.baseurl }}/images/add-user-rekog-tut.png)
 
 6. Click **Attach exisitng policies directly** and Search for **AmazonRekognitionFullAccess** and tick the option. You can opt for ticking **AdministratorAccess** if you are using the same user for future projects. Procced by clicking **Next: Tags**.
 
+    ![set-permissions]({{ site.baseurl }}/images/set-permissions-rekog-tut.png)
+
 7. Skip the Add tags (optional) page, by clicking **Next: Review**.
+
+    ![skip-page]({{ site.baseurl }}/images/skip-page-rekog-tut.png)
 
 8. In the Review page, check your options are selected correctly and complete the process by clicking **Create user**
 
+    ![add-user-button]({{ site.baseurl }}/images/review-rekog-tut.png)
+
 9. You'll be redirected to a Successful page, copy the **Access key ID** and **Secret Access Key** and paste it somewhere secure.
 
+    ![add-user-button]({{ site.baseurl }}/images/copy-rekog-tut.png)
+
 ## For Windows Users
-a. Paste in your **Access key ID** and **Secret Access Key** into a file called **credentials** located inside the folder
+Paste in your **Access key ID** and **Secret Access Key** into a file called **credentials** located inside the folder
 ```
 %USERPROFILE%/.aws
 ```
@@ -76,9 +92,9 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 1. Download the code from this [gist](https://gist.github.com/Jasperabez/3655402640ae8b99946213d525228c59)
 
 2. import the relevant libraries
-```
-pip install boto3 pillow
-```
+    ```
+    pip install boto3 pillow
+    ```
 
 2. point the function add2col (line 41) and check_face (Line 42) to your image path(only one face per image), and type in the person's name replacing 'PersonNAME'
 
