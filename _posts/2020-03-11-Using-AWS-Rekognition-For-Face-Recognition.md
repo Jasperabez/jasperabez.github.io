@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using AWS Rekognition For Facial Identification
+title: Using AWS Rekognition For Facial Recognition
 ---
 Facial recognition is kind of neat, and had been quite widely use as a quick and dirty way of identifying an individual.
 
@@ -14,7 +14,7 @@ Traditionally to implement Facial recognition we need to:
 
 3. Repeat Step 1 and 2, and compare the new features with all the faces in the database using a classifier then you will get the desired name/index
 
-There're some great libraries that you can use to implement these steps, such as the [https://github.com/ageitgey/face_recognition]("face_recognition") library by [https://github.com/ageitgey](Adam Geitgey), which does ease the process relatively. However there's still a fair bit of work to setup and deploy, with some accuracy issues. 
+There're some great libraries that you can use to implement these steps, such as the ["face_recognition"](https://github.com/ageitgey/face_recognition) library by [Adam Geitgey](https://github.com/ageitgey), which does ease the process relatively. However there's still a fair bit of work to setup and deploy, with some accuracy issues. 
 
 Hence, depending on time limitations and the scpoe of your project you might want to opt for a tool like AWS Rekognition which greatly simplifies and abstracts the steps for doing facial recognition for you.
 
@@ -73,7 +73,7 @@ aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 # Step 2 : setting up the python script
 
-1. Download the code from this [https://gist.github.com/Jasperabez/3655402640ae8b99946213d525228c59](gist)
+1. Download the code from this [gist](https://gist.github.com/Jasperabez/3655402640ae8b99946213d525228c59)
 
 2. import the relevant libraries
 ```
