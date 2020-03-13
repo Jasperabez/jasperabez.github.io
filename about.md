@@ -15,8 +15,7 @@ Due to my passion, I joined my course and actively participated (and won!) multi
 I started out this blog to document my adventures in exploring different technologies, covering operating systems, software, cloud, and even some of my experiences in real life.
 
 When I am not programming, I like to read and cook. In addition, with the help of Singapore Polytechnic Outstanding Talent Programme (SPOT) I learn to widen my horizon beyond the technical field. 
-
-Read more here
+[Read more here]({{ site.baseurl }}/Reflection-on-SPOT-SIP/)
 
 # Mentors
 
