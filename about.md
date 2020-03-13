@@ -4,7 +4,19 @@ title: About
 permalink: /about/
 ---
 
-Computer Engineering Student at Singapore Polytechnic
+<img src="{{ site.baseurl }}/images/profilepic.png" style="border-radius: 100%; max-width: 200px; max-height: 200px;"> 
+
+Hi, I am Jabez Tho currently studying Computer Engineering in Singapore Polytechnic.
+
+I inculcated the passion for technology when I was homeschooled in the earlier parts of my life, spending my time configuring linux systems and picking up programming.
+
+Due to my passion, I joined my course and actively participated (and won!) multiple hackathons making some great friends and mentors during my journey. Hackathons also allowed me to apply my technical skills in helping the community meaningfully.
+
+I started out this blog to document my adventures in exploring different technologies, covering operating systems, software, cloud, and even some of my experiences in real life.
+
+When I am not programming, I like to read and cook. In addition, with the help of Singapore Polytechnic Outstanding Talent Programme (SPOT) I learn to widen my horizon beyond the technical field. 
+
+Read more here
 
 # Mentors
 
