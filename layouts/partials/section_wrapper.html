@@ -1,0 +1,10 @@
+<div class="divide-y-2 divide-zinc-100 dark:divide-zinc-400">
+  <div class="space-y-2 pt-6 pb-8 md:space-y-5">
+    <h1
+      class="text-3xl font-extrabold leading-9 tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
+    >
+      {{.section_name}}
+    </h1>
+  </div>
+  <div>{{.nested_html | safeHTML}}</div>
+</div>

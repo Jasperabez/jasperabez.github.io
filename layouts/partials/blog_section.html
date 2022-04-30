@@ -1,0 +1,24 @@
+<ul>
+  {{ range .Pages }}
+  <li class="py-4">
+    <article
+      class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"
+    >
+      <dl>
+        <dt class="sr-only">Published on</dt>
+        <dd class="text-base font-medium leading-6 text-zinc-500">
+          <time datetime="{{.Date}}">{{.Date.Format "Jan 2, 2006"}}</time>
+        </dd>
+      </dl>
+      <div class="space-y-3 xl:col-span-3">
+        <div>
+          <h3 class="text-2xl font-bold leading-8 tracking-tight">
+            <a class="text-zinc-900 dark:text-zinc-100" href="{{.Permalink}}">{{.Title}}</a>
+          </h3>
+        </div>
+        <div class="prose max-w-none text-zinc-500 dark:text-zinc-400">{{.Description}}</div>
+      </div>
+    </article>
+  </li>
+  {{ end }}
+</ul>

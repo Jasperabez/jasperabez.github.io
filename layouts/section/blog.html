@@ -1,0 +1,4 @@
+{{define "main"}}
+{{$blog_section := partial "blog_section.html" .}}
+{{partial "section_wrapper.html" (dict "section_name" "Blog" "nested_html" $blog_section "context" .)}}
+{{end}}

@@ -2,11 +2,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{{ $styles := resources.Get "/css/style.css" | postCSS }}
-
-{{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-{{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"/>
-{{ end }}
+{{ $styles := resources.Get "/css/style.css" | postCSS }} {{ if .Site.IsServer
+}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }} {{ $styles := $styles | minify | fingerprint | resources.PostProcess
+}}
+<link
+  rel="stylesheet"
+  href="{{ $styles.RelPermalink }}"
+  integrity="{{ $styles.Data.Integrity }}"
+/>
+{{ end }} {{ $scripts := resources.Get "/js/dark_light_mode.js" }}
+<script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+{{ template "_internal/google_analytics.html" . }} {{ template
+"_internal/google_analytics_async.html" . }}

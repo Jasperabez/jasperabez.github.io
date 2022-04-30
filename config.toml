@@ -1,7 +1,8 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Hugo & Tailwind 3.0'
+title = 'Jabez Tho'
 disableKinds = ["taxonomy","taxonomyTerm"]
+googleAnalytics = 'UA-149939850-1'
 
 [markup]
   [markup.goldmark]

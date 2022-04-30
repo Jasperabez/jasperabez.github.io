@@ -3,8 +3,18 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
-    <header>{{ partial "header.html" . }}</header>
-    {{ block "main" . }}{{ end }}
+  <body class="dark:bg-zinc-900 dark:text-white">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <div class="flex h-screen flex-col justify-between">
+        <header>{{ partial "header.html" . }}</header>
+        <div class="fixed right-0 bottom-0 mr-6 mb-6">
+          <div class="">
+            {{ partial "toggle_light_dark_button.html" . }}
+          </div>
+        </div>
+        {{ block "main" . }}{{ end }}
+        <footer>{{ partial "footer.html" . }}</footer>
+      </div>
+    </div>
   </body>
 </html>

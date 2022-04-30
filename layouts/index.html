@@ -1,9 +1,26 @@
 {{ define "main" }}
-<main class="container mx-auto px-4 py-24 bg-gray-100">
-    <h1 class="text-3xl underline decoration-pink-500" >Welcome to Hugo with Tailwind CSS</h1>
-    <div class="text-blue-500 text-2xl">This is an example site with TailwindCSS 3.0</div>
-    <div class="text-cyan-700 text-6xl ">This is 6xl in Cyan</div>
-    <div class="text-orange-800 text-4xl ">
-Just added, an example page with some @tailwindcss/typography stylings for markdown -> <a class="text-indigo-400 hover:text-indigo-700 font-bold" href="/prose/"]>/prose/</a>.    </div>
+<main
+  class="h-full container my-32 lg:my-12 rounded-3xl bg-zinc-100 dark:bg-zinc-800 flex flex-row"
+>
+  <div class="h-full flex flex-col justify-center px-6 py-10 lg:px-10">
+    <div class="-mb-6 md:mb-0">
+      <h1 class="text-3xl font-bold lg:text-5xl inline-block">Hi, I am Jabez</h1>
+      <img
+        class="w-12 h-12 inline-block mb-4 ml-2 md:hidden"
+        src="/images/mascot.png"
+      />
+    </div>
+    <p class="my-2 text-lg lg:my-4 lg:text-2xl">
+      Software Engineer|Embedded Enthusiast
+    </p>
+    <p class="font-light lg:text-xl">
+      Read more <a class="font-normal" href="/about">about me</a> or explore
+      <a class="font-normal" href="/blog">my journey</a> in tech
+    </p>
+  </div>
+  <img
+    class="hidden md:block w-36 h-36 xl:w-72 xl:h-72 my-auto mx-auto"
+    src="/images/mascot.png"
+  />
 </main>
 {{ end }}

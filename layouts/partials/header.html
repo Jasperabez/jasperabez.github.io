@@ -1,9 +1,11 @@
-<div class="flex h-24">
-  <div class="my-auto ml-auto mr-12 space-x-6">
-    <a>Home</a>
-    <a>Blog</a>
-    <a>Projects</a>
-    <a>About</a>
-    <a>Contact</a>
+{{$selected_class:= "bg-blue"}}
+<div class="flex items-center py-9">
+  <div class="mx-auto sm:mr-8">
+    {{partial "header_nav_item.html" (dict "name" "Home" "href" "/" "selected"
+    .IsHome)}} {{partial "header_nav_item.html" (dict "name" "Blog" "href"
+    "/blog" "selected" (eq .Section "blog"))}} {{partial "header_nav_item.html"
+    (dict "name" "Projects" "href" "/projects" "selected" (eq .Section
+    "projects"))}} {{partial "header_nav_item.html" (dict "name" "About" "href"
+    "/about" "selected" (eq .Section "about"))}}
   </div>
 </div>
