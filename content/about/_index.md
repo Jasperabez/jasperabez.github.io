@@ -1,3 +1,6 @@
+---
+title: About - Jabez Tho
+---
 Hi, I am Jabez your friendly neighborhood tech enthunsiast.
 I developed the passion for technology when I was
 homeschooled in the earlier parts of my life, spending my time configuring
