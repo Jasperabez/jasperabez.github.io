@@ -1,4 +1,6 @@
-<div class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+<div
+  class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
+>
   <div class="flex flex-col items-center space-x-2 pt-8">
     <img
       src="/images/profilepic.png"
@@ -10,8 +12,9 @@
     </h3>
   </div>
   <div class="prose dark:prose-invert max-w-none xl:pt-8 xl:pb-8 xl:col-span-2">
-    <p>
-      {{.Content}}
-    </p>
+    <p>{{.Content}}</p>
+    <div class="flex justify-center xl:justify-end xl:mr-5">
+      <a href="../resume.pdf">Resume</a>
+    </div>
   </div>
 </div>
