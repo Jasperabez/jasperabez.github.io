@@ -1,9 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>
-  {{ .Title }}
-</title>
+<title>{{ .Title }}</title>
 {{ $styles := resources.Get "/css/style.css" | postCSS }} {{ if .Site.IsServer
 }}
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -19,3 +17,9 @@
 <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
 {{ template "_internal/google_analytics.html" . }} {{ template
 "_internal/google_analytics_async.html" . }}
+
+<!-- Carousel js and css -->
+{{ $scripts := resources.Get "/js/carousel.js" }}
+<script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+{{ $styles := resources.Get "/css/carousel.css" }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
