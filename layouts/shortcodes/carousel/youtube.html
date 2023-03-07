@@ -1,0 +1,25 @@
+{{- $src := .Get "src" -}} {{- $title := .Get "title" -}} {{ $index := .Get "index"}} {{- with .Parent -}} {{
+$class := .Get "itemClass"}} {{ $ordinal := .Ordinal }} {{ $displayItems :=
+(.Get "xlDisplayItems") | default 1 }}
+<li
+  id="c{{ $ordinal }}_slide{{$index}}"
+  class="{{ $class }}"
+  style="min-width: calc(100%/{{ $displayItems }});"
+>
+  <iframe
+    src="{{ $src }}"
+    title="{{ $title }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</li>
+{{- else -}}
+<iframe
+  src="{{ $src }}"
+  title="{{ $title }}"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+{{- end -}}

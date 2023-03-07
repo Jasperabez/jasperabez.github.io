@@ -6,8 +6,8 @@ module.exports = {
         embedded: '#007F5F',
         iot: '#00BFFF',
         mqtt: '#FFA500',
-        lightgraytext: '#CCCCCC',
-        darkgraytext: "#333333"
+        aws: '#FF9900',
+        vr: '#FF4081'
       },
       typography: {
         DEFAULT: {

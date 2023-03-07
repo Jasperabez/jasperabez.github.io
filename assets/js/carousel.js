@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const nextarrow = carousel.querySelector('.next');
       const prevarrow = carousel.querySelector('.prev');
 
+      window.focus()
+
       // Initialize the carousel
       nextarrow.style.display = 'block';
       prevarrow.style.display = 'block';
@@ -80,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
       prevarrow.addEventListener("click", prevSlide);
       prevarrow.addEventListener("mousedown", setInteracted);
       prevarrow.addEventListener("touchstart", setInteracted);
+
+      window.addEventListener("blur", setInteracted);
 
       bullets.forEach(function(bullet) {
         bullet.querySelector('a').addEventListener('click', scrollTo);

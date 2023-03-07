@@ -1,10 +1,13 @@
-{{- $src := .Get "src" -}}
-{{ $index := .Get "index"}}
-{{- with .Parent -}}
-{{ $class := .Get "itemClass"}}
-{{ $ordinal := .Ordinal }}
-{{ $displayItems := (.Get "xlDisplayItems") | default 1 }}
-<li id="c{{ $ordinal }}_slide{{$index}}" class="{{ $class }}"style="min-width: calc(100%/{{ $displayItems }});"><img src="{{ $src }}" alt="" /></li>
+{{- $src := .Get "src" -}} {{- $alt := .Get "alt" -}} {{ $index := .Get "index"}} {{- with .Parent -}} {{
+$class := .Get "itemClass"}} {{ $ordinal := .Ordinal }} {{ $displayItems :=
+(.Get "xlDisplayItems") | default 1 }}
+<li
+  id="c{{ $ordinal }}_slide{{$index}}"
+  class="{{ $class }}"
+  style="min-width: calc(100%/{{ $displayItems }});"
+>
+  <img src="{{ $src }}" alt="{{ $alt }}" />
+</li>
 {{- else -}}
-  <img src="{{$src}}">
+<img src="{{$src}}" />
 {{- end -}}
