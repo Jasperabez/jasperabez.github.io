@@ -7,10 +7,10 @@
   {{ $image := $image.Resize "600x" }}
   <div class="flex-col md:basis-1/2 lg:basis-1/3 px-3">
     <div
-      class="overflow-hidden h-full rounded-md border-2 shadow-xl border-zinc-100 border-opacity-60 dark:border-zinc-800"
+      class="overflow-hidden h-full grid grid-row rounded-md border-2 shadow-xl border-zinc-100 border-opacity-60 dark:border-zinc-800"
     >
-      <a class="w-auto" href="{{.Permalink}}">
-        <img class="object-cover object-center h-64 w-full" src="{{ $image.RelPermalink }}"/>
+      <a class="h-full w-auto" href="{{.Permalink}}">
+        <img class="object-cover object-center max-h-60 md:h-60 lg:h-48 xl:h-64 w-full" src="{{ $image.RelPermalink }}"/>
       </a>
       <div class="p-6">
         <h2 class="mb-3 text-2xl font-bold leading-8 tracking-tight">
