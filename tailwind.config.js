@@ -3,17 +3,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        embedded: '#007F5F',
-        iot: '#00BFFF',
-        mqtt: '#FFA500',
+        python: '#4B8BBE',
+        javascript: '#F7DF1E',
+        golang: '#00ADD8',
         aws: '#FF9900',
+        redis: '#DC382D',
+        flask: '#1B6AC6',
+        react: '#61DAFB',
+        reactnative: '#34A8E9',
+        bluetooth: '#0A84FF',
+        embedded: '#007F5F',
+        networking: '#007ACC',
+        iot: '#00BFFF',
         vr: '#FF4081',
         ar: '#00FF00',
-        python: '#4B8BBE',
+        websocket: '#1C86EE',
+        mqtt: '#FFA500',
         windowsapi: '#0078D7',
-        bluetooth: '#0A84FF',
-        networking: '#007ACC',
-        javascript: '#F7DF1E'
       },
       typography: {
         DEFAULT: {
