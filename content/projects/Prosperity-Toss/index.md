@@ -6,7 +6,7 @@ publishdate: 2021-02-01
 thumbnail: "images/demo_0.png"
 ---
 
-Prosperity Toss, is a real-time multiplayer "Lou Hei" virtual toss for the Lunar New Year done by us, the team here at [Kuhaku](www.kuhaku.tech). My role in this project primarily focuses on the real-time multiplayer backend, DB, and scalability management.
+Prosperity Toss, is a real-time multiplayer "Lou Hei" virtual toss for the Lunar New Year done by us, the team here at [Kuhaku](https://www.kuhaku.tech). My role in this project primarily focuses on the real-time multiplayer backend, DB, and scalability management.
 
 ## Technologies
 {{< badges/python >}}
