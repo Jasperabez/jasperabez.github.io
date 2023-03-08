@@ -1,7 +1,7 @@
-{{- $src := .Get "src" -}} {{- $title := .Get "title" -}} {{ $index := .Get "index"}} {{- with .Parent -}} {{
+{{- $src := .Get "src" -}} {{- $title := .Get "name" -}} {{- with .Parent -}} {{
 $class := .Get "itemClass"}} {{ $ordinal := .Ordinal }}
 <li
-  id="c{{ $ordinal }}_slide{{$index}}"
+  id="c{{ $ordinal }}_slide"
   class="{{ $class }}"
 >
   <iframe

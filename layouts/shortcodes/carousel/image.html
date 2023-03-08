@@ -1,7 +1,7 @@
-{{- $src := .Get "src" -}} {{- $alt := .Get "alt" -}} {{ $index := .Get "index"}} {{- with .Parent -}} {{
+{{- $src := .Get "src" -}} {{- $alt := .Get "alt" -}} {{- with .Parent -}} {{
 $class := .Get "itemClass"}} {{ $ordinal := .Ordinal }}
 <li
-  id="c{{ $ordinal }}_slide{{$index}}"
+  id="c{{ $ordinal }}_slide"
   class="{{ $class }}"
 >
   <img src="{{ $src }}" alt="{{ $alt }}" />
