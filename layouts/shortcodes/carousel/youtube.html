@@ -1,13 +1,11 @@
 {{- $src := .Get "src" -}} {{- $title := .Get "title" -}} {{ $index := .Get "index"}} {{- with .Parent -}} {{
-$class := .Get "itemClass"}} {{ $ordinal := .Ordinal }} {{ $displayItems :=
-(.Get "xlDisplayItems") | default 1 }}
+$class := .Get "itemClass"}} {{ $ordinal := .Ordinal }}
 <li
   id="c{{ $ordinal }}_slide{{$index}}"
   class="{{ $class }}"
-  style="min-width: calc(100%/{{ $displayItems }});"
 >
   <iframe
-    src="{{ $src }}"
+    src="{{ $src }}?rel=0"
     title="{{ $title }}"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -16,7 +14,7 @@ $class := .Get "itemClass"}} {{ $ordinal := .Ordinal }} {{ $displayItems :=
 </li>
 {{- else -}}
 <iframe
-  src="{{ $src }}"
+  src="{{ $src }}?rel=0"
   title="{{ $title }}"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
