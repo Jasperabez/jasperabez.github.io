@@ -9,5 +9,10 @@ googleAnalytics = 'UA-149939850-1'
     [markup.goldmark.renderer]
       unsafe = true
 
+[module]
+  [[module.mounts]]
+    source = "node_modules/pdfobject/pdfobject.min.js"
+    target = "static/js/pdfobject.min.js"
+
 
 

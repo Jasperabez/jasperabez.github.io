@@ -17,9 +17,3 @@
 <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
 {{ template "_internal/google_analytics.html" . }} {{ template
 "_internal/google_analytics_async.html" . }}
-
-<!-- Carousel js and css -->
-{{ $scripts := resources.Get "/js/carousel.js" }}
-<script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
-{{ $styles := resources.Get "/css/carousel.css" }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />

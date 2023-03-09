@@ -1,22 +1,38 @@
-{{- $src := .Get "src" -}} {{- $title := .Get "name" -}} {{- with .Parent -}} {{
-    $class := .Get "itemClass"}} {{ $ordinal := .Ordinal }}
-    <li
-      id="c{{ $ordinal }}_slide"
-      class="{{ $class }}"
-    >
-      <iframe
-        src="{{ $src }}#toolbar=0"
-        title="{{ $title }}"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </li>
-    {{- else -}}
-    <iframe
-      src="{{ $src }}#toolbar=0"
-      title="{{ $title }}"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
-    {{- end -}}
-    
+{{- $src := .Get "src" -}} {{- $title := .Get "name" -}} {{ $fallbackImage := .Get
+  "fallbackImage"}} {{- with .Parent -}} {{
+$class := .Get "itemClass"}} {{ $ordinal := .Ordinal }} {{ $unique_id := print
+"pdf_" (index (seq 999 | shuffle) 0) }}
+<li id="c{{ $ordinal }}_slide" class="{{ $class }}">
+  <script>
+    var options = {
+      fallbackLink:
+        "<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href='{{ $src }}#toolbar=0'>Download PDF</a></p>",
+    };
+  </script>
+  {{ with $fallbackImage }}
+  <script>
+    options.fallbackLink = '<img src="{{ . }}" alt="{{ $title }}" />';
+  </script>
+  {{ end }}
+  <div id="{{ $unique_id }}"></div>
+  <script>
+    PDFObject.embed("{{ $src }}#toolbar=0", "#{{ $unique_id }}", options);
+  </script>
+</li>
+{{- else -}}
+<script>
+  var options = {
+    fallbackLink:
+      "<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href='{{ $src }}#toolbar=0'>Download PDF</a></p>",
+  };
+</script>
+{{ with $fallbackImage }}
+<script>
+  options.fallbackLink = '<img src="{{ . }}" alt="{{ $title }}" />';
+</script>
+{{ end }}
+<div id="{{ $unique_id }}"></div>
+<script>
+  PDFObject.embed("{{ $src }}#toolbar=0", "#{{ $unique_id }}", options);
+</script>
+{{- end -}}

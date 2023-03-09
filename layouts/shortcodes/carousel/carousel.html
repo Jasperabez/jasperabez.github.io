@@ -2,6 +2,15 @@
 {{ $items := (split .Inner "</li>")}}
 {{ $itemsNum := (sub (len $items) 1) }}
 {{ $class := (.Get "class") }}
+<!-- Carousel js and css -->
+{{ $scripts := resources.Get "/js/carousel.js" }}
+<script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+{{ $styles := resources.Get "/css/carousel.css" }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+
+<!-- For embedding pdf -->
+<script type="text/javascript" src="/js/pdfobject.min.js"></script>
+
 <div id="carousel{{ .Ordinal }}" class="carousel not-prose mx-auto {{$class}}" duration="{{ .Get `duration` }}">
     <ul class="rounded-lg">
       {{ range $_index, $_ele := $items }}

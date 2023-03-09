@@ -1,0 +1,70 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn start
+
+PATH: 
+  /bedrock/cross/pin/bin:/bedrock/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/games:/usr/games:/home/jabeztho/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/home/jabeztho/.local/bin:/home/jabeztho/.dotnet/tools:/var/lib/snapd/snap/bin:/bedrock/cross/bin:/home/jabeztho/Android/Sdk/emulator:/home/jabeztho/Android/Sdk/tools:/home/jabeztho/Android/Sdk/tools/bin:/home/jabeztho/Android/Sdk/platform-tools:/home/jabeztho/Android/Sdk/emulator:/home/jabeztho/Android/Sdk/tools:/home/jabeztho/Android/Sdk/tools/bin:/home/jabeztho/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/jabeztho/portfolio-blog/package.json: Expected ',' or '}' after property value in JSON at position 578
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "hugotw3",
+    "version": "1.0.0",
+    "description": "Hugo & Tailwind CSS 3.0",
+    "main": "index.js",
+    "dependencies": {
+      "@tailwindcss/line-clamp": "^0.4.2",
+      "pdfobject": "^2.2.8"
+    },
+    "devDependencies": {
+      "@tailwindcss/typography": "^0.5.1",
+      "autoprefixer": "^10.4.4",
+      "concurrently": "^7.0.0",
+      "postcss": "^8.4.12",
+      "postcss-cli": "^9.1.0",
+      "tailwindcss": "^3.0.24"
+    },
+    "scripts": {
+      "start": "concurrently npm:watch:*",
+      "watch:pdfobject": "uglifyjs pdfobject.js -o ./assets/js/pdfobject.min.js --compress --comments"
+      "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+      "watch:hugo": "hugo server",
+      "build": "hugo --minify"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/4044ever/Hugo-Tailwind-3.0.git"
+    },
+    "keywords": [
+      "hugo",
+      "tailwind",
+      "tailwindcss"
+    ],
+    "author": "4044ever",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/4044ever/Hugo-Tailwind-3.0/issues"
+    },
+    "homepage": "https://github.com/4044ever/Hugo-Tailwind-3.0#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
