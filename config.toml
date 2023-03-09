@@ -1,4 +1,4 @@
-baseURL = 'https://jasperabez.github.io/'
+baseURL = 'https://jabeztho.com'
 languageCode = 'en-us'
 title = 'Jabez Tho'
 disableKinds = ["taxonomy","taxonomyTerm"]
