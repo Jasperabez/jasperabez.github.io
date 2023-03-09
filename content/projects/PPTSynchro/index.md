@@ -18,6 +18,6 @@ PPTSynchro is a fully portable, packagable python program to synchronize powerpo
 {{< linkbadges/code href="https://github.com/Jasperabez/PPTSynchro" >}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/image src="thumbnail.png" >}}
 {{< /carousel/carousel >}}

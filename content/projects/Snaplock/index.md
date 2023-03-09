@@ -14,6 +14,6 @@ Snaplock, is a one-stop IoT development platform that offers integration and clo
 {{< badges/networking >}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/image src="thumbnail.png" >}}
 {{< /carousel/carousel >}}

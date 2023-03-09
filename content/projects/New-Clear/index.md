@@ -14,6 +14,6 @@ New-Clear is an open IoT platform for radiation level tracking via fleet of crow
 {{< badges/mqtt>}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/image src="thumbnail.webp" >}}
 {{< /carousel/carousel >}}

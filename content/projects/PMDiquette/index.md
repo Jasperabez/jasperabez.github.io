@@ -14,7 +14,7 @@ PMDiquette is a virtual reality-based personal mobility device (PMD) safety trai
 {{< badges/iot>}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/youtube src="https://www.youtube.com/embed/xWfwJY9MURg" >}}
     {{< carousel/image src="images/grouppic.jpg" >}}
 {{< /carousel/carousel >}}

@@ -14,6 +14,6 @@ Q-Track is an all encompassing attedance taking system, enabled via the usage of
 {{< badges/javascript >}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/image src="thumbnail.png" >}}
 {{< /carousel/carousel >}}

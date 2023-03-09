@@ -21,7 +21,8 @@ We showcased G-DANs in the [HADR Challenge](https://www.space.org.sg/hadr/) orga
 {{< badges/ai >}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" >}}
+    {{< carousel/youtube src="https://www.youtube.com/embed/N0AQTWtl4JM" fallbackImage="images/hadr_poster.png">}}
     {{< carousel/pdf src="documents/HADR_POSTER.pdf" fallbackImage="images/hadr_poster.png">}}
     {{< carousel/pdf src="documents/NAPROCK_G_DANS.pdf" fallbackImage="images/naprock.png">}}
     {{< carousel/image src="images/grouppic.png" >}}

@@ -19,7 +19,7 @@ Prosperity Toss, is a real-time multiplayer "Lou Hei" virtual toss for the Lunar
 {{< linkbadges/web_demo href="https://master.d2hgyp77rn18ui.amplifyapp.com/welcome" >}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/image src="images/demo_0.png" >}}
     {{< carousel/image src="images/demo_1.png" >}}
     {{< carousel/image src="images/demo_2.png" >}}

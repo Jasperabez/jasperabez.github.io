@@ -14,7 +14,7 @@ I-S.E.A.R (Information Security Edutainment Augmented Reality) is an augmented r
 {{< badges/javascript>}}
 
 ## Gallery
-{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32" duration="7000" >}}
+{{< carousel/carousel class="xl:w-3/4" itemClass="md:py-56 py-32"  >}}
     {{< carousel/youtube src="https://www.youtube.com/embed/L6j_bhzC5ik" >}}
     {{< carousel/image src="images/thumbnail.jpeg" >}}
 {{< /carousel/carousel >}}
