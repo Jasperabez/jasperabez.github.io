@@ -1,0 +1,22 @@
+{{- $src := .Get "src" -}} {{- $title := .Get "name" -}} {{- with .Parent -}} {{
+    $class := .Get "itemClass"}} {{ $ordinal := .Ordinal }}
+    <li
+      id="c{{ $ordinal }}_slide"
+      class="{{ $class }}"
+    >
+      <iframe
+        src="{{ $src }}#toolbar=0"
+        title="{{ $title }}"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </li>
+    {{- else -}}
+    <iframe
+      src="{{ $src }}#toolbar=0"
+      title="{{ $title }}"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    {{- end -}}
+    

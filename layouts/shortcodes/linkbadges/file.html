@@ -1,0 +1,3 @@
+{{ $name := default "File" (.Get "name")}}
+{{ partial "badge/link_badge.html"  (dict "disableColor" true "badgeClass" "rounded-md !px-3"
+"name" $name "href" (.Get "href") "faIcon" "file" "iconClass" "w-2.5 h-3") }}
