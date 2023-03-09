@@ -1,4 +1,4 @@
-baseURL = 'https://jasperabez.github.io/'
+baseURL = 'https://jabeztho.com/'
 languageCode = 'en-us'
 title = 'Jabez Tho'
 disableKinds = ["taxonomy","taxonomyTerm"]
@@ -10,6 +10,9 @@ googleAnalytics = 'UA-149939850-1'
       unsafe = true
 
 [module]
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
   [[module.mounts]]
     source = "node_modules/pdfobject/pdfobject.min.js"
     target = "static/js/pdfobject.min.js"
