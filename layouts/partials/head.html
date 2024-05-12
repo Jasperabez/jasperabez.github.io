@@ -15,5 +15,4 @@
 />
 {{ end }} {{ $scripts := resources.Get "/js/dark_light_mode.js" }}
 <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
-{{ template "_internal/google_analytics.html" . }} {{ template
-"_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
