@@ -2,7 +2,7 @@
 layout: post
 title: Automating AUR Package Maintenance with GitHub Actions
 description: less manual labor, more time for coffee! ☕️ (and other important stuff)
-publishdate: 2024-07-24
+publishdate: 2024-07-06
 ---
 
 ### Sidenote:
@@ -22,10 +22,10 @@ However, for my new PKGBUILD I decided to source the official install script ins
 
 The caveats are that I have to skip the checksum check for the tarball as the tarball downloaded is no longer "deterministic". 
 
-## Diff of the PKGBUILD
+### Diff of the PKGBUILD
 ```diff
--ARCHIVE_PATH="/installers/release-1.4.5/1.4.5.d5955e24/linux/MbedStudio.tar.gz"
-+INSTALLER_PATH="/installers/latest/linux/MbedStudio.sh"
+- ARCHIVE_PATH="/installers/release-1.4.5/1.4.5.d5955e24/linux/MbedStudio.tar.gz"
++ INSTALLER_PATH="/installers/latest/linux/MbedStudio.sh"
 ---
 - source=("$DOMAIN$ARCHIVE_PATH"
 + source=("$_archivename-official-installer.sh::$DOMAIN$INSTALLER_PATH"
@@ -46,7 +46,7 @@ The caveats are that I have to skip the checksum check for the tarball as the ta
 
 you can find the full PKGBUILDs on the [AUR repo](https://aur.archlinux.org/packages/mbed-studio-bin)
 
-## Why do I still need Github Actions then?
+### Why do I still need Github Actions then?
 For MbedStudio the inbuilt updating mechanism does not work with the patch, so to prompt users to update I'll have to manually bump the version in the PKGBUILD instead.
 
 # 2. Setting up GitHub Repository
@@ -54,19 +54,19 @@ In order to use GitHub Actions, I created a [centralized repository](https://git
 
 aurpublish manages all the packages in subdirectories using subtrees.
 
-## To pull package maintained
+### To pull package maintained
 Run the following command at the root of your repo
 ```
 aurpublish -p <package-name>
 ```
 
-## To publish package to AUR
+### To publish package to AUR
 Run the following command at the root of your repo
 ```
 aurpublish <package-name>
 ```
 
-## Repo Structure
+### Repo Structure
 The repository structure should somewhat look like this:
 ```
 .
