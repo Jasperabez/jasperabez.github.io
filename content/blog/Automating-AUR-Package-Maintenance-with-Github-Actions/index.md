@@ -9,7 +9,7 @@ publishdate: 2024-07-06
 I realized it’s been five years since my last post, but oh well better late than never! Hopefully I can update this blog more consistently in the future.
 
 # Problem
-I'm the maintainer of MbedStudio (an IDE for MbedOS) on AUR (Arch User Repository). However, after moving to NixOS for my daily driver, I have neglected ensuring the package remains in sync with the latest upstream changes.
+I'm the maintainer of [MbedStudio (an IDE for MbedOS)](https://os.mbed.com/studio/) on [AUR (Arch User Repository)](https://wiki.archlinux.org/title/Arch_User_Repository). However, after moving to NixOS for my daily driver, I have neglected ensuring the package remains in sync with the latest upstream changes.
 
 The update process itself was relatively simple, when there's a new version I'll grab the latest tarball path from upstream and update my PKGBUILD (AUR shell script). The PKGBUILD does the patching required when users install it. 
 
