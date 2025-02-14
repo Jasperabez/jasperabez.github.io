@@ -1,7 +1,7 @@
 baseURL = 'https://jabeztho.com/'
 languageCode = 'en-us'
 title = 'Jabez Tho'
-disableKinds = ["taxonomy","taxonomyTerm"]
+disableKinds = ["taxonomy"]
 googleAnalytics = 'G-6DH827VXED'
 
 [markup]
@@ -16,6 +16,3 @@ googleAnalytics = 'G-6DH827VXED'
   [[module.mounts]]
     source = "node_modules/pdfobject/pdfobject.min.js"
     target = "static/js/pdfobject.min.js"
-
-
-
