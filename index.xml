@@ -1,406 +1,406 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jabez Tho</title><link>https://jabeztho.com/</link><description>Recent content on Jabez Tho</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jabeztho.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Automating AUR Package Maintenance with GitHub Actions</title><link>https://jabeztho.com/blog/automating-aur-package-maintenance-with-github-actions/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/automating-aur-package-maintenance-with-github-actions/</guid><description>&lt;h3 id="sidenote">Sidenote:&lt;/h3>
-&lt;p>I realized it’s been five years since my last post, but oh well better late than never! Hopefully I can update this blog more consistently in the future.&lt;/p>
-&lt;h1 id="problem">Problem&lt;/h1>
-&lt;p>I&amp;rsquo;m the maintainer of &lt;a href="https://os.mbed.com/studio/">MbedStudio (an IDE for MbedOS)&lt;/a> on &lt;a href="https://wiki.archlinux.org/title/Arch_User_Repository">AUR (Arch User Repository)&lt;/a>. However, after moving to NixOS for my daily driver, I have neglected ensuring the package remains in sync with the latest upstream changes.&lt;/p>
-&lt;p>The update process itself was relatively simple, when there&amp;rsquo;s a new version I&amp;rsquo;ll grab the latest tarball path from upstream and update my PKGBUILD (AUR shell script). The PKGBUILD does the patching required when users install it.&lt;/p></description></item><item><title>Q-Track</title><link>https://jabeztho.com/projects/q-track/</link><pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/q-track/</guid><description>&lt;p>Q-Track is an all encompassing attedance taking system, enabled via the usage of personalized QR code. Made for my church, it was kept simple utilizing on free, easy to use online services such as Netlify and Google Apps Script for Google Sheets integration. The system works across the web and on android, sharing one unified codebase and paired with a supplementary React app to enable quick distribution of the personalized QR codes.&lt;/p></description></item><item><title>Snaplock</title><link>https://jabeztho.com/projects/snaplock/</link><pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/snaplock/</guid><description>&lt;p>Snaplock, is a one-stop IoT development platform that offers integration and cloud services to a myriad of commercial lock. It was developed by our team here at &lt;a href="https://www.kuhaku.tech">Kuhaku&lt;/a>. My works here primarily lies in reverse engineering closed source locks, and writing integration edge software that communicates back to our security compliant backend.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jabez Tho</title><link>https://jabeztho.com/</link><description>Recent content on Jabez Tho</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 06 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jabeztho.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Automating AUR Package Maintenance with GitHub Actions</title><link>https://jabeztho.com/blog/automating-aur-package-maintenance-with-github-actions/</link><pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/automating-aur-package-maintenance-with-github-actions/</guid><description>&lt;h3 id="sidenote"&gt;Sidenote:&lt;/h3&gt;
+&lt;p&gt;I realized it’s been five years since my last post, but oh well better late than never! Hopefully I can update this blog more consistently in the future.&lt;/p&gt;
+&lt;h1 id="problem"&gt;Problem&lt;/h1&gt;
+&lt;p&gt;I&amp;rsquo;m the maintainer of &lt;a href="https://os.mbed.com/studio/"&gt;MbedStudio (an IDE for MbedOS)&lt;/a&gt; on &lt;a href="https://wiki.archlinux.org/title/Arch_User_Repository"&gt;AUR (Arch User Repository)&lt;/a&gt;. However, after moving to NixOS for my daily driver, I have neglected ensuring the package remains in sync with the latest upstream changes.&lt;/p&gt;
+&lt;p&gt;The update process itself was relatively simple, when there&amp;rsquo;s a new version I&amp;rsquo;ll grab the latest tarball path from upstream and update my PKGBUILD (AUR shell script). The PKGBUILD does the patching required when users install it.&lt;/p&gt;</description></item><item><title>Q-Track</title><link>https://jabeztho.com/projects/q-track/</link><pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/q-track/</guid><description>&lt;p&gt;Q-Track is an all encompassing attedance taking system, enabled via the usage of personalized QR code. Made for my church, it was kept simple utilizing on free, easy to use online services such as Netlify and Google Apps Script for Google Sheets integration. The system works across the web and on android, sharing one unified codebase and paired with a supplementary React app to enable quick distribution of the personalized QR codes.&lt;/p&gt;</description></item><item><title>Snaplock</title><link>https://jabeztho.com/projects/snaplock/</link><pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/snaplock/</guid><description>&lt;p&gt;Snaplock, is a one-stop IoT development platform that offers integration and cloud services to a myriad of commercial lock. It was developed by our team here at &lt;a href="https://www.kuhaku.tech"&gt;Kuhaku&lt;/a&gt;. My works here primarily lies in reverse engineering closed source locks, and writing integration edge software that communicates back to our security compliant backend.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-embedded">&lt;/div>
+ &lt;div class="px-1 bg-embedded"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Embedded
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-golang">&lt;/div>
+ &lt;div class="px-1 bg-golang"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  GoLang
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-networking">&lt;/div>
+ &lt;div class="px-1 bg-networking"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Networking
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>Prosperity Toss</title><link>https://jabeztho.com/projects/prosperity-toss/</link><pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/prosperity-toss/</guid><description>&lt;p>Prosperity Toss, is a real-time multiplayer &amp;ldquo;Lou Hei&amp;rdquo; virtual toss for the Lunar New Year done by us, the team here at &lt;a href="https://www.kuhaku.tech">Kuhaku&lt;/a>. My role in this project primarily focuses on the real-time multiplayer backend, DB, and scalability management.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>Prosperity Toss</title><link>https://jabeztho.com/projects/prosperity-toss/</link><pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/prosperity-toss/</guid><description>&lt;p&gt;Prosperity Toss, is a real-time multiplayer &amp;ldquo;Lou Hei&amp;rdquo; virtual toss for the Lunar New Year done by us, the team here at &lt;a href="https://www.kuhaku.tech"&gt;Kuhaku&lt;/a&gt;. My role in this project primarily focuses on the real-time multiplayer backend, DB, and scalability management.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-python">&lt;/div>
+ &lt;div class="px-1 bg-python"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Python
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-redis">&lt;/div>
+ &lt;div class="px-1 bg-redis"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Redis
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-flask">&lt;/div>
+ &lt;div class="px-1 bg-flask"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Flask
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-websocket">&lt;/div>
+ &lt;div class="px-1 bg-websocket"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Websocket
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-aws">&lt;/div>
+ &lt;div class="px-1 bg-aws"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  AWS
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>PPTSynchro</title><link>https://jabeztho.com/projects/pptsynchro/</link><pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/pptsynchro/</guid><description>&lt;p>PPTSynchro is a fully portable, packagable python program to synchronize powerpoint slides on 2 different machines via either blutooth or a shared network connection.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>PPTSynchro</title><link>https://jabeztho.com/projects/pptsynchro/</link><pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/pptsynchro/</guid><description>&lt;p&gt;PPTSynchro is a fully portable, packagable python program to synchronize powerpoint slides on 2 different machines via either blutooth or a shared network connection.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-python">&lt;/div>
+ &lt;div class="px-1 bg-python"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Python
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-windowsapi">&lt;/div>
+ &lt;div class="px-1 bg-windowsapi"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Windows API
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-networking">&lt;/div>
+ &lt;div class="px-1 bg-networking"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Networking
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-bluetooth">&lt;/div>
+ &lt;div class="px-1 bg-bluetooth"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Bluetooth
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>I-S.E.A.R</title><link>https://jabeztho.com/projects/i-s.e.a.r/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/i-s.e.a.r/</guid><description>&lt;p>I-S.E.A.R (Information Security Edutainment Augmented Reality) is an augmented reality-based education platform that gamifies learning and educates the importance of internet security by cultivating best practices. As the Top 2 team, we were invited to Hong Kong to present at Jardines Digital Conference. Read more at this &lt;a href="https://leeweijuin.medium.com/hack-asia-f0481305e76c">Medium article&lt;/a> written by my teammate, Lee Wei Juin.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>I-S.E.A.R</title><link>https://jabeztho.com/projects/i-s.e.a.r/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/i-s.e.a.r/</guid><description>&lt;p&gt;I-S.E.A.R (Information Security Edutainment Augmented Reality) is an augmented reality-based education platform that gamifies learning and educates the importance of internet security by cultivating best practices. As the Top 2 team, we were invited to Hong Kong to present at Jardines Digital Conference. Read more at this &lt;a href="https://leeweijuin.medium.com/hack-asia-f0481305e76c"&gt;Medium article&lt;/a&gt; written by my teammate, Lee Wei Juin.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-aws">&lt;/div>
+ &lt;div class="px-1 bg-aws"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  AWS
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-ar">&lt;/div>
+ &lt;div class="px-1 bg-ar"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  AR
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-javascript">&lt;/div>
+ &lt;div class="px-1 bg-javascript"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Javascript
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>KeepLeView</title><link>https://jabeztho.com/projects/keepleview/</link><pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/keepleview/</guid><description>&lt;p>KeepLeView, developed for AWS Hackdays 2021, is an innovative solution that enhances food bank distribution. The system provides customized food item allocation based on beneficiaries&amp;rsquo; unique preferences and needs, and matches suitable volunteers to distribute them optimally, reducing food wastage and promoting sustainability. The system leverages on AWS serverless resources (Lambda, Amplify, DynamoDB) for scalability and integration of IoT resources (IoT Core).&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>KeepLeView</title><link>https://jabeztho.com/projects/keepleview/</link><pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/keepleview/</guid><description>&lt;p&gt;KeepLeView, developed for AWS Hackdays 2021, is an innovative solution that enhances food bank distribution. The system provides customized food item allocation based on beneficiaries&amp;rsquo; unique preferences and needs, and matches suitable volunteers to distribute them optimally, reducing food wastage and promoting sustainability. The system leverages on AWS serverless resources (Lambda, Amplify, DynamoDB) for scalability and integration of IoT resources (IoT Core).&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-aws">&lt;/div>
+ &lt;div class="px-1 bg-aws"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  AWS
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-iot">&lt;/div>
+ &lt;div class="px-1 bg-iot"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  IoT
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-python">&lt;/div>
+ &lt;div class="px-1 bg-python"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Python
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-angular">&lt;/div>
+ &lt;div class="px-1 bg-angular"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Angular
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>TweetRescue</title><link>https://jabeztho.com/projects/tweetrescue/</link><pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/tweetrescue/</guid><description>&lt;p>TweetRescue is a project that was created for the SCDF X IBM Innovation Challenge 2020. Its primary objective is to offer an effortless and user-friendly approach for citizens to report potential or existing fire and obstruction hazards through Twitter by using a designated hashtag (#scdftweetrescue). By using image analysis technology, the system can quickly identify and filter out irrelevant alerts to ensure that only genuine reports are forwarded to relevant authorities. Thus, enabling authorities to act promptly and efficiently to mitigate potential dangers.&lt;/p></description></item><item><title>TyphoonGAN</title><link>https://jabeztho.com/projects/typhoongan/</link><pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/typhoongan/</guid><description>&lt;p>TyphoonGAN or G-DANS (Generative Destructive Adversarial Networks), is a novel framework to rapidly simulate typhoon aftermath and predict destruction hotspots based on satellite imagery, assisting disaster relief efforts. Built upon &lt;a href="https://junyanz.github.io/CycleGAN/">CycleGAN&lt;/a>, it could be applied to areas where typhoon had never been an occurence.&lt;/p>
-&lt;p>We showcased G-DANs in the &lt;a href="https://www.space.org.sg/hadr/">HADR Challenge&lt;/a> organized by SSTA, Airbus and (DSTA), and in the &lt;a href="https://www.naprock.jp/">NAPROCK international contest&lt;/a>, clinching 1st runner up and special prize respectively.&lt;/p>
-&lt;h2 id="links">Links&lt;/h2>
-&lt;p>
-&lt;div class="inline-block mr-2">
- &lt;a href="documents/HADR_POSTER.pdf" target="_blank">
- &lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>TweetRescue</title><link>https://jabeztho.com/projects/tweetrescue/</link><pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/tweetrescue/</guid><description>&lt;p&gt;TweetRescue is a project that was created for the SCDF X IBM Innovation Challenge 2020. Its primary objective is to offer an effortless and user-friendly approach for citizens to report potential or existing fire and obstruction hazards through Twitter by using a designated hashtag (#scdftweetrescue). By using image analysis technology, the system can quickly identify and filter out irrelevant alerts to ensure that only genuine reports are forwarded to relevant authorities. Thus, enabling authorities to act promptly and efficiently to mitigate potential dangers.&lt;/p&gt;</description></item><item><title>TyphoonGAN</title><link>https://jabeztho.com/projects/typhoongan/</link><pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/typhoongan/</guid><description>&lt;p&gt;TyphoonGAN or G-DANS (Generative Destructive Adversarial Networks), is a novel framework to rapidly simulate typhoon aftermath and predict destruction hotspots based on satellite imagery, assisting disaster relief efforts. Built upon &lt;a href="https://junyanz.github.io/CycleGAN/"&gt;CycleGAN&lt;/a&gt;, it could be applied to areas where typhoon had never been an occurence.&lt;/p&gt;
+&lt;p&gt;We showcased G-DANs in the &lt;a href="https://www.space.org.sg/hadr/"&gt;HADR Challenge&lt;/a&gt; organized by SSTA, Airbus and (DSTA), and in the &lt;a href="https://www.naprock.jp/"&gt;NAPROCK international contest&lt;/a&gt;, clinching 1st runner up and special prize respectively.&lt;/p&gt;
+&lt;h2 id="links"&gt;Links&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class="inline-block mr-2"&gt;
+ &lt;a href="documents/HADR_POSTER.pdf" target="_blank"&gt;
+ &lt;div class="h-fit flex flex-row"&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 rounded-md !px-3"
- >
+ &gt;
  
- &lt;div class="inline-block w-2.5 h-2.5 mr-1 fill-white w-2.5 h-3">
- &lt;span>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">&lt;!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->&lt;path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/>&lt;/svg>
-&lt;/span>
+ &lt;div class="inline-block w-2.5 h-2.5 mr-1 fill-white w-2.5 h-3"&gt;
+ &lt;span&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"&gt;&lt;!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --&gt;&lt;path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
 
- &lt;/div>
+ &lt;/div&gt;
  HADR Poster
- &lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
 
- &lt;/a>
-&lt;/div>
+ &lt;/a&gt;
+&lt;/div&gt;
 
 
 
-&lt;div class="inline-block mr-2">
- &lt;a href="documents/NAPROCK_G_DANS.pdf" target="_blank">
- &lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;
+ &lt;a href="documents/NAPROCK_G_DANS.pdf" target="_blank"&gt;
+ &lt;div class="h-fit flex flex-row"&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 rounded-md !px-3"
- >
+ &gt;
  
- &lt;div class="inline-block w-2.5 h-2.5 mr-1 fill-white w-2.5 h-3">
- &lt;span>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">&lt;!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->&lt;path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/>&lt;/svg>
-&lt;/span>
+ &lt;div class="inline-block w-2.5 h-2.5 mr-1 fill-white w-2.5 h-3"&gt;
+ &lt;span&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"&gt;&lt;!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --&gt;&lt;path fill="currentColor" d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"/&gt;&lt;/svg&gt;
+&lt;/span&gt;
 
- &lt;/div>
+ &lt;/div&gt;
  NAPROCK Brief
- &lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
 
- &lt;/a>
-&lt;/div>
+ &lt;/a&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>Using AWS Rekognition facial recognition with deeplens</title><link>https://jabeztho.com/blog/using-aws-rekognition-facial-recognition-with-deeplens/</link><pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/using-aws-rekognition-facial-recognition-with-deeplens/</guid><description>&lt;p>Deeplens is a cool product from AWS, so called a &amp;ldquo;deep learning enabled video camera&amp;rdquo; that let you to deploy machine learning models easily to it, and run inference on the live feed. Kind of a like a Raspberry Pi with webcam, but much powerful and easier to setup(that&amp;rsquo;s if you are familiar with AWS).&lt;/p>
-&lt;p>Face recognition, is a complex problem that takes several steps as mentioned in my previous post on &lt;a href="https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/">&amp;ldquo;Using AWS Rekognition For Face Recognition&amp;rdquo;&lt;/a>.&lt;/p></description></item><item><title>Using AWS Rekognition For Facial Recognition</title><link>https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/</link><pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/</guid><description>&lt;p>Facial recognition is kind of neat, and had been quite widely use as a quick and dirty way of identifying an individual.&lt;/p>
-&lt;p>Traditionally to implement Facial recognition we need to:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Identify Faces in an Image&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Extract features from the face&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Store the features from step 2 in a database, tagged with a name/index&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Repeat Step 1 and 2, and compare the new features with all the faces in the database using a classifier then you will get the desired name/index&lt;/p></description></item><item><title>SPOT - SIP</title><link>https://jabeztho.com/blog/spot-sip/</link><pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/spot-sip/</guid><description>&lt;p>In our second year of study in Singapore Polytechnic (SP),
-we are required to take a module called Social Innovation Project (SIP).&lt;/p>
-&lt;p>SIP is a module to teach us the design thinking process. We focus on a particular group in the society and develop an appropriate solution/product to help them using the design thinking process. We had to conduct interviews, create a persona from the data we collected, make a prototype based on the persona, showcase our prototype in a gallery walk, and finally refine our prototype for our final presentation based on the feedback we received. Which is a pretty tedious process considering we only have 2 hours per week together.&lt;/p></description></item><item><title>PMDiquette</title><link>https://jabeztho.com/projects/pmdiquette/</link><pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/pmdiquette/</guid><description>&lt;p>PMDiquette is a virtual reality-based personal mobility device (PMD) safety training simulator which we developed for AWS BuildOn 2019. After the panel from AWS, NUS, and GovTech interacted with our prototype, we managed to clinch 1st Runner up (Institute category) and Viewers’ Choice! Read more at this &lt;a href="https://leeweijuin.medium.com/aws-build-on-singapore-2019-hackathon-institute-category-45db5492ac12">Medium article&lt;/a> written by my teammate, Lee Wei Juin.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>Using AWS Rekognition facial recognition with deeplens</title><link>https://jabeztho.com/blog/using-aws-rekognition-facial-recognition-with-deeplens/</link><pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/using-aws-rekognition-facial-recognition-with-deeplens/</guid><description>&lt;p&gt;Deeplens is a cool product from AWS, so called a &amp;ldquo;deep learning enabled video camera&amp;rdquo; that let you to deploy machine learning models easily to it, and run inference on the live feed. Kind of a like a Raspberry Pi with webcam, but much powerful and easier to setup(that&amp;rsquo;s if you are familiar with AWS).&lt;/p&gt;
+&lt;p&gt;Face recognition, is a complex problem that takes several steps as mentioned in my previous post on &lt;a href="https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/"&gt;&amp;ldquo;Using AWS Rekognition For Face Recognition&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Using AWS Rekognition For Facial Recognition</title><link>https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/</link><pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/using-aws-rekognition-for-face-recognition/</guid><description>&lt;p&gt;Facial recognition is kind of neat, and had been quite widely use as a quick and dirty way of identifying an individual.&lt;/p&gt;
+&lt;p&gt;Traditionally to implement Facial recognition we need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Identify Faces in an Image&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Extract features from the face&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Store the features from step 2 in a database, tagged with a name/index&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Repeat Step 1 and 2, and compare the new features with all the faces in the database using a classifier then you will get the desired name/index&lt;/p&gt;</description></item><item><title>SPOT - SIP</title><link>https://jabeztho.com/blog/spot-sip/</link><pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/spot-sip/</guid><description>&lt;p&gt;In our second year of study in Singapore Polytechnic (SP),
+we are required to take a module called Social Innovation Project (SIP).&lt;/p&gt;
+&lt;p&gt;SIP is a module to teach us the design thinking process. We focus on a particular group in the society and develop an appropriate solution/product to help them using the design thinking process. We had to conduct interviews, create a persona from the data we collected, make a prototype based on the persona, showcase our prototype in a gallery walk, and finally refine our prototype for our final presentation based on the feedback we received. Which is a pretty tedious process considering we only have 2 hours per week together.&lt;/p&gt;</description></item><item><title>PMDiquette</title><link>https://jabeztho.com/projects/pmdiquette/</link><pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/pmdiquette/</guid><description>&lt;p&gt;PMDiquette is a virtual reality-based personal mobility device (PMD) safety training simulator which we developed for AWS BuildOn 2019. After the panel from AWS, NUS, and GovTech interacted with our prototype, we managed to clinch 1st Runner up (Institute category) and Viewers’ Choice! Read more at this &lt;a href="https://leeweijuin.medium.com/aws-build-on-singapore-2019-hackathon-institute-category-45db5492ac12"&gt;Medium article&lt;/a&gt; written by my teammate, Lee Wei Juin.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-aws">&lt;/div>
+ &lt;div class="px-1 bg-aws"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  AWS
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-vr">&lt;/div>
+ &lt;div class="px-1 bg-vr"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  VR
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-iot">&lt;/div>
+ &lt;div class="px-1 bg-iot"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  IoT
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>New-Clear</title><link>https://jabeztho.com/projects/new-clear/</link><pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/new-clear/</guid><description>&lt;p>New-Clear is an open IoT platform for radiation level tracking via fleet of crowd-sourced Geiger counters called NEW-PLANT. We clinched 1st Runner up in EIC (Engineering Innovation Challenge) 2019, which theme is “Radiation is everywhere”. Read more at this &lt;a href="https://leeweijuin.medium.com/engineering-innovation-challenge-2019-8592eb57285f">Medium article&lt;/a> written by my teammate, Lee Wei Juin.&lt;/p>
-&lt;h2 id="technologies">Technologies&lt;/h2>
-&lt;p>&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;/p&gt;</description></item><item><title>New-Clear</title><link>https://jabeztho.com/projects/new-clear/</link><pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate><guid>https://jabeztho.com/projects/new-clear/</guid><description>&lt;p&gt;New-Clear is an open IoT platform for radiation level tracking via fleet of crowd-sourced Geiger counters called NEW-PLANT. We clinched 1st Runner up in EIC (Engineering Innovation Challenge) 2019, which theme is “Radiation is everywhere”. Read more at this &lt;a href="https://leeweijuin.medium.com/engineering-innovation-challenge-2019-8592eb57285f"&gt;Medium article&lt;/a&gt; written by my teammate, Lee Wei Juin.&lt;/p&gt;
+&lt;h2 id="technologies"&gt;Technologies&lt;/h2&gt;
+&lt;p&gt;&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-embedded">&lt;/div>
+ &lt;div class="px-1 bg-embedded"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  Embedded
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-iot">&lt;/div>
+ &lt;div class="px-1 bg-iot"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  IoT
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 
-&lt;div class="inline-block mr-2">&lt;div class="h-fit flex flex-row">
+&lt;div class="inline-block mr-2"&gt;&lt;div class="h-fit flex flex-row"&gt;
  
- &lt;div class="px-1 bg-mqtt">&lt;/div>
+ &lt;div class="px-1 bg-mqtt"&gt;&lt;/div&gt;
  
  &lt;div
  class="py-2 px-2 font-medium text-sm text-white rounded-r-md bg-zinc-800 "
- >
+ &gt;
  MQTT
- &lt;/div>
-&lt;/div>
-&lt;/div>
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;/p></description></item><item><title>AWS budget alert setup (email and sms)</title><link>https://jabeztho.com/blog/aws-budget-alert-setup/</link><pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/aws-budget-alert-setup/</guid><description>&lt;p>As a newbie to AWS who is pretty broke,
+&lt;/p&gt;</description></item><item><title>AWS budget alert setup (email and sms)</title><link>https://jabeztho.com/blog/aws-budget-alert-setup/</link><pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate><guid>https://jabeztho.com/blog/aws-budget-alert-setup/</guid><description>&lt;p&gt;As a newbie to AWS who is pretty broke,
 it is kind of important not to overspend due to own negligence or ignorance in the services that AWS employs,
 for example not shutting down instances, leak keys etc.
-Having a budget alert would quickly notify you in real time when you start spending real money in AWS that is more than you are willing to.&lt;/p>
-&lt;h1 id="steps">Steps&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>Sign in to AWS management console&lt;/p></description></item></channel></rss>
+Having a budget alert would quickly notify you in real time when you start spending real money in AWS that is more than you are willing to.&lt;/p&gt;
+&lt;h1 id="steps"&gt;Steps&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sign in to AWS management console&lt;/p&gt;</description></item></channel></rss>
